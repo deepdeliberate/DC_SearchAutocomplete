@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: autocomplete-service
+  devtools:
+    restart:
+      enabled: true
+
+logging:
+  level:
+    root: INFO
+    com.autocomplete: DEBUG
