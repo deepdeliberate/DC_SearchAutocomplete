@@ -22,4 +22,10 @@ public class AutocompleteController {
     ) {
         return autocompleteService.getSuggestions(q, limit);
     }
+
+    @PostMapping("/search")
+    public void search(@RequestParam String q){
+        autocompleteService.recordSearch(q.toLowerCase());
+    }
+
 }
